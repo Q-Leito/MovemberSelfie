@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".fragment.CameraFragment">
+
+    <com.freedommobile.movemberselfie.helper.ScalingTextureView
+        android:id="@+id/texture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Capture Stillshot Button -->
+    <RelativeLayout
+        android:id="@+id/capture_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/cam_widget_margin_bottom"
+        android:background="@drawable/circle_opaque"
+        android:padding="@dimen/cam_content_inset_primary">
+
+        <RelativeLayout
+            android:id="@+id/capture_button_secondary_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_white"
+            android:padding="1dp">
+
+            <ImageButton
+                android:id="@+id/stillshot"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/cam_circle_selector"
+                android:padding="@dimen/cam_content_inset_secondary"
+                android:scaleType="fitXY"
+                android:src="@drawable/cam_action_stillshot"
+                tools:ignore="ContentDescription"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/stillshot_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/stillshot_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+        <RelativeLayout
+            android:id="@+id/close_stillshot_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/stillshot_widget_margin_sides"
+            android:layout_marginTop="@dimen/stillshot_widget_margin_top"
+            android:animateLayoutChanges="true"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/x_white_border"/>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

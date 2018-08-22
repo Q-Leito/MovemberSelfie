@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MovemberSelfie</string>
+    <string name="title_home">Home</string>
+    <string name="title_camera">Camera</string>
+    <string name="empty_gallery_label">
+        <![CDATA[
+            <p>
+                <big>No Selfies yet…</big><br/>
+                Start taking Selfies by pressing the camera button in the bottom right corner.
+            </p>
+        ]]>
+    </string>
+    <string name="capture_photo">Capture photo</string>
+    <string name="image_description">MovemberSelfie taken by user.</string>
+    <string name="choose_file">Choose file</string>
+    <string name="enter_file_name">Enter file name</string>
+    <string name="upload">Upload</string>
+    <string name="movemberselfie_image">MovemberSelfie image</string>
+    <string name="show_uploads">Show Uploads</string>
+    <string name="image_name">Image name</string>
+    <string name="progress_bar_counter">0%</string>
+    <string name="movember_logo">Movember logo</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="profile">Profile</string>
+    <string name="posts">POSTS</string>
+    <string name="fullscreen_preview">Fullscreen preview</string>
+</resources>
